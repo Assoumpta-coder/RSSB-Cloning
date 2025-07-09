@@ -5,79 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSSB</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        .bg-custom-sky-blue {
-            background-color: #EBF4FF;
-
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- <header class="bg-custom-sky-blue py-2 px-4 md:px-8 lg:px-12">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-
+    <header class="bg-blue-200 py-2 px-4 md:px-8 lg:px-12">
+        <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center space-x-4 mb-2 md:mb-0">
-                <a href="#" class="text-blue-900 transition-colors duration-200">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                </a>
-                <div class="h-6 w-px bg-gray-300"></div> 
-                <a href="#"
-                    class="text-blue-900 transition-colors duration-200">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.174-1.555-3.594-1.555-3.479 0-6.302 2.823-6.302 6.302 0 .49.055.969.158 1.428-5.253-.263-9.916-2.78-13.03-6.6-.547.94-.863 2.03-.863 3.197 0 2.181 1.116 4.137 2.808 5.29-.823-.023-1.59-.251-2.274-.626v.086c0 3.062 2.181 5.617 5.091 6.196-.535.145-1.096.223-1.673.223-.406 0-.804-.044-1.193-.114.819 2.532 3.178 4.375 5.98 4.425-2.112 1.654-4.766 2.659-7.697 2.659-.501 0-.994-.031-1.48-.086 2.766 1.764 6.095 2.792 9.686 2.792 11.605 0 17.915-9.664 17.915-18.068 0-.272-.006-.54-.014-.808.778-.553 1.455-1.248 1.999-2.115z" />
-                    </svg>
+                <a href="#" class="text-blue-900 hover:text-blue-700 transition-colors duration-200">
+                    <img src="./Nav Bar Icons/LinkedIn.png" alt="LinkedIn" class="h-6 w-6">
                 </a>
                 <div class="h-6 w-px bg-gray-300"></div>
 
-                <a href="#" class="text-blue-900 transition-colors duration-200">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.811c-3.273 0-4.189 1.543-4.189 4.037v2.963z" />
-                    </svg>
+                <a href="#" class="text-blue-900 hover:text-blue-700 transition-colors duration-200">
+                    <img src="./Nav Bar Icons/Twitter.png" alt="X (formerly Twitter)" class="h-6 w-6">
                 </a>
                 <div class="h-6 w-px bg-gray-300"></div>
 
-                <a href="#" class="text-blue-900 transition-colors duration-200">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M19.615 3.184c-3.604-.246-11.458-.246-15.062 0-2.324.192-2.81 1.76-2.91 5.922-.054 2.377-.054 4.756 0 7.133.1 4.162.586 5.73 2.91 5.922 3.604.246 11.458.246 15.062 0 2.324-.192 2.81-1.76 2.91-5.922.054-2.377.054-4.756 0-7.133-.1-4.162-.586-5.73-2.91-5.922zm-7.615 10.714v-5.898l4.084 2.951-4.084 2.947z" />
-                    </svg>
+                <a href="#" class="text-blue-900 hover:text-blue-700 transition-colors duration-200">
+                    <img src="./Nav Bar Icons/Facebook.png" alt="Facebook" class="h-6 w-6">
                 </a>
                 <div class="h-6 w-px bg-gray-300"></div>
 
-                <a href="#" class="text-blue-900 transition-colors duration-200">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.891 19.865c-3.186-.776-4.961-3.222-5.365-6.865h3.336c.37.892.834 1.579 1.517 2.046 1.106.757 2.115.549 2.115-.453 0-1.727-2.839-4.576-3.535-6.425-.371-.979-.099-1.928.536-2.477.894-.764 2.302-.958 3.504-.543 1.215.419 2.052 1.488 2.392 2.948.339 1.464-.25 4.316-1.577 6.444-.325.534-.823.77-1.467.573-.325-.099-.58-.337-.738-.636-.202-.384-.249-.861-.293-1.391l-1.077 4.204zm3.036-7.135c-.097.502-.279.799-.548.887-.27.087-.63-.035-.859-.364-.23-.33-.314-.725-.262-1.258.052-.533.226-.827.498-.916.273-.089.623.035.854.359.23.325.319.718.267 1.292z" />
-                    </svg>
+                <a href="#" class="text-blue-900 hover:text-blue-700 transition-colors duration-200">
+                    <img src="./Nav Bar Icons/Youtube.png" alt="YouTube" class="h-6 w-6">
+                </a>
+                <div class="h-6 w-px bg-gray-300"></div>
+
+                <a href="#" class="text-blue-900 hover:text-blue-700 transition-colors duration-200">
+                    <img src="./Nav Bar Icons/Instagram.png" alt="Instagram" class="h-6 w-6">
                 </a>
             </div>
 
-            <div class="flex items-center space-x-4 text-custom-dark-blue text-sm">
+            <div class="flex items-center space-x-4 text-blue-900 text-sm">
                 <a href="#" class="hover:text-blue-700 transition-colors duration-200">Publications</a>
 
                 <div class="h-6 w-px bg-gray-300"></div>
 
                 <a href="#" class="flex items-center hover:text-blue-700 transition-colors duration-200">
                     Online Services
-                    <svg class="ml-1 h-3 w-3 fill-current" viewBox="0 0 20 20">
-                        <path
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd" fill-rule="evenodd"></path>
-                    </svg>
+                    <span class="ml-1 text-xs">&#x25BC;</span>
                 </a>
             </div>
         </div>
-    </header> -->
-
+    </header>
 
     <header class="bg-white py-4 px-4 md:px-8 lg:px-12 border-b border-gray-100">
 
@@ -129,37 +101,41 @@
     </header>
 
 
-    <!-- <img src="./Ejoheza.png" alt="Ejohezaa" class="absolute w-screen h-[40%]"> -->
-    <nav class="bg-blue-900 text-white font-bold p-4 rounded-lg mx-auto mt-8 shadow-lg max-w-7xl hidden md:block">
-        <div class="container mx-auto flex justify-start items-center space-x-12">
-            <h1>HOME</h1>
-            <h1>SCHEMES</h1>
-            <h1>INVESTMENT</h1>
-            <h1>MANAGEMENT</h1>
-            <h1>ABOUT</h1>
-            <h1>CAREERS</h1>
-            <h1>NEWS & EVENTS</h1>
-        </div>
-        <div>
-    </nav>
-    <div class="bg-[url('./Ejoheza.png')] bg-cover">
-        <div class="mt-20 p-8">
-            <div class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-sans leading-relaxed mx-auto">
-                EJOHEZA <span class="text-yellow-500 font-bold">Save</span> for a better future for you
-                <br>
-                and your family.
-            </div>
+    <div class="relative min-h-screen"> <img src="./Ejoheza.png" alt="Ejohezaa"
+            class="absolute inset-0 w-full h-full object-cover z-0">
 
-            <div class="text-blue-800 font-bold text-lg mt-2 mx-auto">
-                EJOHEZA
+        <nav
+            class="relative z-10 bg-blue-900 text-white font-bold p-4 rounded-lg mx-auto mt-8 shadow-lg max-w-7xl hidden md:block">
+            <div class="container mx-auto flex justify-start items-center space-x-12">
+                <h1>HOME</h1>
+                <h1>SCHEMES</h1>
+                <h1>INVESTMENT</h1>
+                <h1>MANAGEMENT</h1>
+                <h1>ABOUT</h1>
+                <h1>CAREERS</h1>
+                <h1>NEWS & EVENTS</h1>
             </div>
-            <button
-                class="bg-blue-900 px-8 text-2xl mt-8 text-white font-semibold py-5  px-8  rounded-md hover:bg-white hover:text-blue-900 hover:border-blue-900 ">
-                Learn More
-            </button>
+        </nav>
+
+        <div class="relative z-10">
+            <div class="mt-20 p-8">
+                <div class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-sans leading-relaxed mx-auto">
+                    EJOHEZA <span class="text-yellow-500 font-bold">Save</span> for a better future for you
+                    <br>
+                    and your family.
+                </div>
+
+                <div class="text-blue-800 font-bold text-lg mt-2 mx-auto">
+                    EJOHEZA
+                </div>
+                <button
+                    class="bg-blue-900 px-8 text-2xl mt-8 text-white font-semibold py-5 rounded-md hover:bg-white hover:text-blue-900 hover:border-blue-900 ">
+                    Learn More
+                </button>
+            </div>
         </div>
     </div>
-    <div class="mt-80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+    <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
 
 
         <div
@@ -168,9 +144,9 @@
 
                 <img src="./Cards Icons/Member.png" alt="Member First Icon" class="h-10 w-10">
             </div>
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Member First</h3>
-            <p class="text-blue-700 font-bold text-xl mb-2">13 Million</p>
-            <p class="text-gray-600 text-sm">of Rwandans are covered by RSSB services</p>
+            <h3 class="text-md font-semibold text-gray-800 mb-1">Member First</h3>
+            <p class="text-gray-600 text-sm"><span class="text-blue-700 font-bold text-sm mb-2">13 Million</span>
+                of Rwandans are<br> covered by RSSB services</p>
         </div>
 
 
@@ -179,9 +155,9 @@
             <div class="mb-4">
                 <img src="./Cards Icons/Experience.png" alt="Experience Icon" class="h-10 w-10">
             </div>
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Experience</h3>
-            <p class="text-blue-700 font-bold text-xl mb-2">60 years</p>
-            <p class="text-gray-600 text-sm">of service for your safety and well-being.</p>
+            <h3 class="text-md font-semibold text-gray-800 mb-1">Experience</h3>
+            <p class="text-gray-600 text-sm"><span class="text-blue-700 font-bold text-sm mb-2">60 years</span>
+                of service for your safety and well-being.</p>
         </div>
 
         <div
@@ -189,9 +165,9 @@
             <div class="mb-4">
                 <img src="./Cards Icons/Branches.png" alt="Branches Icon" class="h-10 w-10">
             </div>
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Branches</h3>
-            <p class="text-blue-700 font-bold text-xl mb-2">30 branches</p>
-            <p class="text-gray-600 text-sm">Our services decentralized in 30 branches for your satisfaction</p>
+            <h3 class="text-md font-semibold text-gray-800 mb-1">Branches</h3>
+            <p class="text-gray-600 text-sm"> <span class="text-blue-700 font-bold text-sm mb-2">30 branches</span>
+                Our services decentralized in 30 branches for your satisfaction</p>
         </div>
 
 
@@ -200,15 +176,16 @@
             <div class="mb-4">
                 <img src="./Cards Icons/Data driven.png" alt="Data Driven Icon" class="h-10 w-10">
             </div>
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Data Driven</h3>
-            <p class="text-blue-700 font-bold text-xl mb-2">Learning from our data</p>
-            <p class="text-gray-600 text-sm">Learning from our data to improve the services offered to our members</p>
+            <h3 class="text-md font-bold text-gray-800 mb-1">Data Driven</h3>
+            <p class="text-gray-600 text-sm"> <span class="text-blue-700 font-bold text-sm mb-2">Learning from our
+                    data</span>
+                Learning from our data to improve the services offered to our members</p>
         </div>
     </div>
 
 
     <div
-        class="text-center mt-10 text-gray-700 text-xl md:text-2xl lg:text-4xl font-semibold leading-tight max-w-4xl mx-auto p-4">
+        class="text-center mt-10 text-gray-700 bg-gray-100 md:text-2xl lg:text-4xl font-semibold leading-tight max-w-4xl mx-auto p-4">
         Optimistic and forward-looking agent of central government, working to achieve
         <span class="text-blue-800 font-bold">the financial security and health of all Rwandans.</span>
     </div>
@@ -219,258 +196,171 @@
         </h2>
     </div>
 
-    <div class="mx-[4%] mt-10">
-    <h1 class="text-blue-800 text-center font-bold text-lg mb-10">
-        SOCIAL PROTECTION SCHEMES
-    </h1>
-    <div class="flex flex-wrap justify-between">
-        <div
-            class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700"
-        >
+    <div class="mx-[4%] mt-10 mb-20 ">
+        <h1 class="text-blue-800 text-center font-bold text-lg mb-10">
+            SOCIAL PROTECTION SCHEMES
+        </h1>
+        <div class="flex flex-wrap justify-between">
             <div
-                class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                style="background-image: url('./SCHEME CARDS ICON/First-Pic.jpeg');"
-            ></div>
+                class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700">
+                <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    style="background-image: url('./SCHEME CARDS ICON/First-Pic.jpeg');"></div>
 
-            <div
-                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
-            ></div>
+                <div
+                    class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700">
+                </div>
 
-            <div
-                class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4"
-            >
-                <img
-                    src="./SCHEME CARDS ICON/Pension-Icon.svg"
-                    class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
-                    alt="Pension Icon"
-                />
-                <h1
-                    class="font-bold transition-colors duration-700 group-hover:text-orange-400"
-                >
-                    PENSION SCHEME
-                </h1>
-                <p
-                    class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200"
-                >
-                    Retire with Dignity
-                </p>
-                <p
-                    class="hidden group-hover:block text-white mt-3 transition-all duration-700"
-                >
-                    LEARN MORE
-                </p>
-                <hr
-                    class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700"
-                />
+                <div class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                    <img src="./SCHEME CARDS ICON/Pension-Icon.svg"
+                        class="w-20 mx-auto transition-filter duration-700 group-hover:invert" alt="Pension Icon" />
+                    <h1 class="font-bold transition-colors duration-700 group-hover:text-orange-400">
+                        PENSION SCHEME
+                    </h1>
+                    <p class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200">
+                        Retire with Dignity
+                    </p>
+                    <p class="hidden group-hover:block text-white mt-3 transition-all duration-700">
+                        LEARN MORE
+                    </p>
+                    <hr
+                        class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700" />
+                </div>
             </div>
-        </div>
-
-        <div
-            class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700"
-        >
-            <div
-                class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                style="background-image: url('./SCHEME CARDS ICON/Second-Pic.jpeg');"
-            ></div>
 
             <div
-                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
-            ></div>
+                class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700">
+                <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    style="background-image: url('./SCHEME CARDS ICON/Second-Pic.jpeg');"></div>
 
-            <div
-                class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4"
-            >
-                <img
-                    src="./SCHEME CARDS ICON/Occupational Hazards-Icon.svg"
-                    class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
-                    alt="Occupational Hazards Icon"
-                />
-                <h1
-                    class="font-bold transition-colors duration-700 group-hover:text-orange-400"
-                >
-                    OCCUPATIONAL HAZARDS
-                </h1>
-                <p
-                    class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200"
-                >
-                    We Are Here For You
-                </p>
-                <p
-                    class="hidden group-hover:block text-white mt-3 transition-all duration-700"
-                >
-                    LEARN MORE
-                </p>
-                <hr
-                    class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700"
-                />
+                <div
+                    class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700">
+                </div>
+
+                <div class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                    <img src="./SCHEME CARDS ICON/Occupational Hazards-Icon.svg"
+                        class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
+                        alt="Occupational Hazards Icon" />
+                    <h1 class="font-bold transition-colors duration-700 group-hover:text-orange-400">
+                        OCCUPATIONAL HAZARDS
+                    </h1>
+                    <p class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200">
+                        We Are Here For You
+                    </p>
+                    <p class="hidden group-hover:block text-white mt-3 transition-all duration-700">
+                        LEARN MORE
+                    </p>
+                    <hr
+                        class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700" />
+                </div>
             </div>
-        </div>
-
-        <div
-            class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700"
-        >
-            <div
-                class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                style="background-image: url('./SCHEME CARDS ICON/Third-Pic.jpeg');"
-            ></div>
 
             <div
-                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
-            ></div>
+                class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700">
+                <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    style="background-image: url('./SCHEME CARDS ICON/Third-Pic.jpeg');"></div>
 
-            <div
-                class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4"
-            >
-                <img
-                    src="./SCHEME CARDS ICON/Medical Scheme-Icon.svg"
-                    class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
-                    alt="Medical Scheme Icon"
-                />
-                <h1
-                    class="font-bold transition-colors duration-700 group-hover:text-orange-400"
-                >
-                    MEDICAL SCHEME
-                </h1>
-                <p
-                    class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200"
-                >
-                    Our Health, Our Future
-                </p>
-                <p
-                    class="hidden group-hover:block text-white mt-3 transition-all duration-700"
-                >
-                    LEARN MORE
-                </p>
-                <hr
-                    class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700"
-                />
+                <div
+                    class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700">
+                </div>
+
+                <div class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                    <img src="./SCHEME CARDS ICON/Medical Scheme-Icon.svg"
+                        class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
+                        alt="Medical Scheme Icon" />
+                    <h1 class="font-bold transition-colors duration-700 group-hover:text-orange-400">
+                        MEDICAL SCHEME
+                    </h1>
+                    <p class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200">
+                        Our Health, Our Future
+                    </p>
+                    <p class="hidden group-hover:block text-white mt-3 transition-all duration-700">
+                        LEARN MORE
+                    </p>
+                    <hr
+                        class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700" />
+                </div>
             </div>
-        </div>
-
-        <div
-            class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700"
-        >
-            <div
-                class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                style="background-image: url('./SCHEME CARDS ICON/Fourth-Pic.jpeg');"
-            ></div>
 
             <div
-                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
-            ></div>
+                class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700">
+                <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    style="background-image: url('./SCHEME CARDS ICON/Fourth-Pic.jpeg');"></div>
 
-            <div
-                class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4"
-            >
-                <img
-                    src="./SCHEME CARDS ICON/CBHI-Icon.svg"
-                    class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
-                    alt="CBHI Icon"
-                />
-                <h1
-                    class="font-bold transition-colors duration-700 group-hover:text-orange-400"
-                >
-                    CBHI SCHEME
-                </h1>
-                <p
-                    class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200"
-                >
-                    Giving You Happiness At Best Rate
-                </p>
-                <p
-                    class="hidden group-hover:block text-white mt-3 transition-all duration-700"
-                >
-                    LEARN MORE
-                </p>
-                <hr
-                    class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700"
-                />
+                <div
+                    class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700">
+                </div>
+
+                <div class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                    <img src="./SCHEME CARDS ICON/CBHI-Icon.svg"
+                        class="w-20 mx-auto transition-filter duration-700 group-hover:invert" alt="CBHI Icon" />
+                    <h1 class="font-bold transition-colors duration-700 group-hover:text-orange-400">
+                        CBHI SCHEME
+                    </h1>
+                    <p class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200">
+                        Giving You Happiness At Best Rate
+                    </p>
+                    <p class="hidden group-hover:block text-white mt-3 transition-all duration-700">
+                        LEARN MORE
+                    </p>
+                    <hr
+                        class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700" />
+                </div>
             </div>
-        </div>
-
-        <div
-            class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700"
-        >
-            <div
-                class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                style="background-image: url('./SCHEME CARDS ICON/Fifth-Pic.jpeg');"
-            ></div>
 
             <div
-                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
-            ></div>
+                class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700">
+                <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    style="background-image: url('./SCHEME CARDS ICON/Fifth-Pic.jpeg');"></div>
 
-            <div
-                class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4"
-            >
-                <img
-                    src="./SCHEME CARDS ICON/Ejoheza-Icon.svg"
-                    class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
-                    alt="Ejoheza Icon"
-                />
-                <h1
-                    class="font-bold transition-colors duration-700 group-hover:text-orange-400"
-                >
-                    EJOHEZA
-                </h1>
-                <p
-                    class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200"
-                >
-                    Start Early And Reap The Rewards.
-                </p>
-                <p
-                    class="hidden group-hover:block text-white mt-3 transition-all duration-700"
-                >
-                    LEARN MORE
-                </p>
-                <hr
-                    class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700"
-                />
+                <div
+                    class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700">
+                </div>
+
+                <div class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                    <img src="./SCHEME CARDS ICON/Ejoheza-Icon.svg"
+                        class="w-20 mx-auto transition-filter duration-700 group-hover:invert" alt="Ejoheza Icon" />
+                    <h1 class="font-bold transition-colors duration-700 group-hover:text-orange-400">
+                        EJOHEZA
+                    </h1>
+                    <p class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200">
+                        Start Early And Reap The Rewards.
+                    </p>
+                    <p class="hidden group-hover:block text-white mt-3 transition-all duration-700">
+                        LEARN MORE
+                    </p>
+                    <hr
+                        class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700" />
+                </div>
             </div>
-        </div>
-
-        <div
-            class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700"
-        >
-            <div
-                class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-                style="background-image: url('./SCHEME CARDS ICON/Sixth-Pic.jpeg');"
-            ></div>
 
             <div
-                class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700"
-            ></div>
+                class="group relative border-gray-300 border w-full h-60 py-[15%] sm:py-[8%] md:h-80 md:w-[32%] md:py-[8%] text-center rounded-md mt-3 overflow-hidden transition-all duration-700">
+                <div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    style="background-image: url('./SCHEME CARDS ICON/Sixth-Pic.jpeg');"></div>
 
-            <div
-                class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4"
-            >
-                <img
-                    src="./SCHEME CARDS ICON/Maternity Leave-Icon.svg"
-                    class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
-                    alt="Maternity Leave Icon"
-                />
-                <h1
-                    class="font-bold transition-colors duration-700 group-hover:text-orange-400"
-                >
-                    MATERITY LEAVE
-                </h1>
-                <p
-                    class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200"
-                >
-                    Enjoy Your Maternity Leave With Your Full Salary
-                </p>
-                <p
-                    class="hidden group-hover:block text-white mt-3 transition-all duration-700"
-                >
-                    LEARN MORE
-                </p>
-                <hr
-                    class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700"
-                />
+                <div
+                    class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-50 transition-opacity duration-700">
+                </div>
+
+                <div class="relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                    <img src="./SCHEME CARDS ICON/Maternity Leave-Icon.svg"
+                        class="w-20 mx-auto transition-filter duration-700 group-hover:invert"
+                        alt="Maternity Leave Icon" />
+                    <h1 class="font-bold transition-colors duration-700 group-hover:text-orange-400">
+                        MATERITY LEAVE
+                    </h1>
+                    <p class="text-gray-500 transition-colors duration-700 group-hover:text-gray-200">
+                        Enjoy Your Maternity Leave With Your Full Salary
+                    </p>
+                    <p class="hidden group-hover:block text-white mt-3 transition-all duration-700">
+                        LEARN MORE
+                    </p>
+                    <hr
+                        class="mx-auto w-10 border-2 border-orange-400 hidden group-hover:block transition-all duration-700" />
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="bg-gray-100 px-6 py-12 gap-4">
         <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8">
@@ -575,9 +465,9 @@
 
     <div class="flex justify-center py-12 px-4">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-12">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
                 <img src="./NEWS AND EVENTS IMAGES/Men in Panel Discussion.jpeg" alt="Men in Panel Discussion"
-                    class="w-full h-48 object-cover rounded-t-lg">
+                    class="w-full h-48 object-cover rounded-t-lg group-hover:scale-110 transition-transform duration-700">
 
                 <div class="p-6">
                     <p class="text-xs text-gray-500 mb-2">7 months ago</p>
@@ -592,9 +482,9 @@
             </div>
 
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
                 <img src="./NEWS AND EVENTS IMAGES/Youth in Basketball.jpeg" alt="Youth in Basketball"
-                    class="w-full h-48 object-cover rounded-t-lg">
+                    class="w-full h-48 object-cover rounded-t-lg group-hover:scale-110 transition-transform duration-700">
 
                 <div class="p-6">
                     <p class="text-xs text-gray-500 mb-2">a year ago</p>
@@ -609,9 +499,12 @@
             </div>
 
 
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="./NEWS AND EVENTS IMAGES/RSSB CEO Being handed Certificate.jpeg"
-                    alt="RSSB CEO Being handed Certificate" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative w-full h-48 overflow-hidden">
+                    <img src="./NEWS AND EVENTS IMAGES/RSSB CEO Being handed Certificate.jpeg"
+                        alt="RSSB CEO Being handed Certificate"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
 
                 <div class="p-6">
                     <p class="text-xs text-gray-500 mb-2">2 years ago</p>
