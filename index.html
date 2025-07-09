@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSSB</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         .bg-custom-sky-blue {
             background-color: #EBF4FF;
@@ -128,6 +129,7 @@
     </header>
 
 
+    <!-- <img src="./Ejoheza.png" alt="Ejohezaa" class="absolute w-screen h-[40%]"> -->
     <nav class="bg-blue-900 text-white font-bold p-4 rounded-lg mx-auto mt-8 shadow-lg max-w-7xl hidden md:block">
         <div class="container mx-auto flex justify-start items-center space-x-12">
             <h1>HOME</h1>
@@ -140,28 +142,28 @@
         </div>
         <div>
     </nav>
-    <div class="mt-20 p-8">
-        <div class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-sans leading-relaxed mx-auto">
-            EJOHEZA <span class="text-yellow-500 font-bold">Save</span> for a better future for you
-            <br>
-            and your family.
-        </div>
+    <div class="bg-[url('./Ejoheza.png')] bg-cover">
+        <div class="mt-20 p-8">
+            <div class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-sans leading-relaxed mx-auto">
+                EJOHEZA <span class="text-yellow-500 font-bold">Save</span> for a better future for you
+                <br>
+                and your family.
+            </div>
 
-        <div class="text-blue-800 font-bold text-lg mt-2 mx-auto">
-            EJOHEZA
+            <div class="text-blue-800 font-bold text-lg mt-2 mx-auto">
+                EJOHEZA
+            </div>
+            <button
+                class="bg-blue-900 px-8 text-2xl mt-8 text-white font-semibold py-5  px-8  rounded-md hover:bg-white hover:text-blue-900 hover:border-blue-900 ">
+                Learn More
+            </button>
         </div>
-        <button
-            class="bg-blue-900 px-8 text-2xl mt-8 text-white font-semibold py-5  px-8  rounded-md hover:bg-white hover:text-blue-900 hover:border-blue-900 ">
-            Learn More
-        </button>
     </div>
-
-
-    <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <div class="mt-80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
 
 
         <div
-            class="group bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+            class="group bg-white p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
             <div class="mb-4">
 
                 <img src="./Cards Icons/Member.png" alt="Member First Icon" class="h-10 w-10">
@@ -173,7 +175,7 @@
 
 
         <div
-            class="group bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+            class="group bg-white p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
             <div class="mb-4">
                 <img src="./Cards Icons/Experience.png" alt="Experience Icon" class="h-10 w-10">
             </div>
@@ -183,7 +185,7 @@
         </div>
 
         <div
-            class="group bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+            class="group bg-white p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
             <div class="mb-4">
                 <img src="./Cards Icons/Branches.png" alt="Branches Icon" class="h-10 w-10">
             </div>
@@ -194,7 +196,7 @@
 
 
         <div
-            class="group bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+            class="group bg-white p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
             <div class="mb-4">
                 <img src="./Cards Icons/Data driven.png" alt="Data Driven Icon" class="h-10 w-10">
             </div>
@@ -218,18 +220,25 @@
     </div>
 
     <div class="grid grid-cols-3 gap-2 p-12">
-        <div class="group border border-gray-600 p-30 hover:bg-[url(./SCHEME CARDS ICON/pension card bg image.jpeg)]">
+        <!-- <div class="group border border-gray-600 p-30 hover:bg-[url('./Ejoheza.png')]">
             <img src="./SCHEME CARDS ICON/public (1).svg" alt="Pension Icon" class="group-hover:invert h-16 w-16 mb-4">
-            <!-- <img src="./SCHEME CARDS ICON/pension card bg image.jpeg" alt="Pension Icon" class="hidden group-hover:block"> -->
+            <img src="./Ejoheza.png" alt="Pension Icon" class="hidden group-hover:block">
             <h2 class="group-hover:text-yellow-500">PENSION SCHEME</h2>
             <p>Retire With Dignity</p>
             <h2 class="hidden group-hover:block">LEARN MORE</h2>
+        </div> -->
+
+        <div
+            class=" group flex flex-col items-center text-center bg-white p-8 rounded border shadow space-y-2 hover:bg-blue-100 hover:bg-[url(Image/family-photo.jpeg)] hover:bg-cover hover:bg-center hover:bg-blend-multiply">
+            <img src="./Ejoheza.png" alt="box1" class="h-15 group-hover:invert">
+            <p class="font-bold group-hover:text-orange-500">PENSION SCHEME</p>
+            <P class=" text-black group-hover:text-white">Retire With Dignity</P>
         </div>
 
         <div class="group border border-gray-600 p-30">
             <img src="./SCHEME CARDS ICON/public (1).svg" alt="Pension Icon" class="group-hover:invert h-16 w-16 mb-4">
-            <img src="./SCHEME CARDS ICON/pension card bg image.jpeg" alt="Pension Icon"
-                class="hidden group-hover:block">
+            <img src="./SCHEME CARDS ICON/pension card bg image.jpeg" class="w-105 -ml-30 -mt-40 absolute"
+                alt="Pension Icon" class="hidden group-hover:block">
             <h2 class="group-hover:text-yellow-500">PENSION SCHEME</h2>
             <p>Retire With Dignity</p>
             <h2 class="hidden group-hover:block">LEARN MORE</h2>
@@ -271,6 +280,30 @@
             <h2 class="hidden group-hover:block">LEARN MORE</h2>
         </div>
     </div>
+
+    <div class="bg-gray-100 px-6 py-12 gap-4">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+
+
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">Never miss your contributions again</h2>
+                <p class="text-base text-gray-700">
+                    <span class="text-yellow-500">Imisanzu</span> revolutionizes the way you manage your social security
+                    contributions. Access your information anytime, anywhere with ease and security. Enjoy convenience
+                    and transparency. Take control of your future and join Imisanzu today.
+                </p>
+                <button class="bg-blue-800 text-white font-bold rounded-lg text-sm px-8 py-3 mt-5">Get Started</button>
+            </div>
+
+
+            <div class="lg:w-1/2">
+                <img src="./Digital Services Screenshoot.jpeg" alt="Digital Services Screenshot"
+                    class="w-full rounded shadow">
+            </div>
+
+        </div>
+    </div>
+
 
     <div class="bg-white w-2/3 px-6 py-10 ">
         <h2 class="text-2xl font-bold text-blue-900 mb-3">Digital transformation</h2>
